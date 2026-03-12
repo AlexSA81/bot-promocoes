@@ -66,9 +66,10 @@ async def handler(event):
 
 
 async def main():
-    await telegram.start()
+    await telegram.connect()
     await bot.start(discord_token)
 
 
 if __name__ == "__main__":
     asyncio.run(main())
+
